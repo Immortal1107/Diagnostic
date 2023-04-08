@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ru" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="/static/style.css">
+  </head>
+<body>
+    <h3 align="center"><font size="10" color= "#ff7675">Диагностика инфаркта</font></h3>
+
+<div align="center">
+<font color= "#ff7675">
+  <form action="/result_heart_attack" method="POST">
+    <label for="age">age</label>
+    <input type="text" id="age" name="age" required>
+	<br>
+    <label for="sex">sex</label>
+    <select id="sex" name="sex">
+      <option value="0">Female</option>
+      <option value="1">Male</option>
+    </select>
+    <br>
+    <label for="cp">cp</label>
+    <select id="cp" name="cp">
+      <option value="0">asymptomatic</option>
+      <option value="1">typical angina</option>
+      <option value="2">atypical angina</option>
+      <option value="3">non-anginal pain</option>
+    </select>
+    <br>
+    <label for="trestbps">trestbps</label>
+    <input type="text" id="trestbps" name="trestbps" required>
+	<br>
+    <label for="chol">chol</label>
+    <input type="text" id="chol" name="chol" required>
+	<br>
+    <label for="fbs">fbs</label>
+    <select id="fbs" name="fbs">
+      <option value="0">No</option>
+      <option value="1">Yes</option>
+    </select>
+    <br>
+    <label for="restecg">restecg</label>
+    <select id="restecg" name="restecg">
+      <option value="0">hypertrophy</option>
+      <option value="1">normal</option>
+      <option value="2">having ST-T wave abnormality</option>
+    </select>
+    <br>
+    <label for="thalach">thalach</label>
+    <input type="text" id="thalach" name="thalach" required>
+	<br>
+	<label for="exang">exang</label>
+    <select id="exang" name="exang">
+      <option value="0">No</option>
+      <option value="1">Yes</option>
+    </select>
+    <br>
+    <label for="oldpeak">oldpeak</label>
+    <input type="text" id="oldpeak" name="oldpeak" required>
+	<br>
+    <label for="slope">slope</label>
+    <select id="slope" name="slope">
+      <option value="0">downsloping</option>
+      <option value="1">flat</option>
+      <option value="2">upsloping</option>
+    </select>
+    <br>
+    <label for="ca">ca</label>
+    <select id="ca" name="ca">
+      <option value="0">0</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+    </select>
+    <br>
+    <label for="thal">thal</label>
+    <select id="thal" name="thal">
+      <option value="1">fixed defect</option>
+      <option value="2">normal</option>
+      <option value="3">reversable defect</option>
+    </select>
+    <br>
+    <br>
+    <br>
+	<input type="submit" value="Отправить">
+    <br>
+    <br>
+    <br>
+   </form>
+   <form action="/start">
+     <input type="submit" value="Назад">
+   </form>
+</font>
+</div>
+</body>
+</html>

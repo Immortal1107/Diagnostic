@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ru" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="/static/style.css">
+  </head>
+<body>
+    <h3 align="center"><font size="10" color= "#ff7675">Диагностика инсульта</font></h3>
+
+<div align="center">
+<font color= "#ff7675">
+  <form action="/result_stroke" method="POST">
+    <label for="gender">gender</label>
+    <select id="gender" name="gender">
+      <option value="0">Female</option>
+      <option value="1">Male</option>
+	  <option value="2">Other</option>
+    </select>
+    <br>
+	<label for="age">age</label>
+    <input type="text" id="age" name="age" required>
+	<br>
+	<label for="hypertension">hypertension</label>
+    <select id="hypertension" name="hypertension">
+      <option value="0">No</option>
+      <option value="1">Yes</option>
+    </select>
+    <br>
+	<label for="heart_disease">heart_disease</label>
+    <select id="heart_disease" name="heart_disease">
+      <option value="0">No</option>
+      <option value="1">Yes</option>
+    </select>
+    <br>
+	<label for="ever_married">ever_married</label>
+    <select id="ever_married" name="ever_married">
+      <option value="0">No</option>
+      <option value="1">Yes</option>
+    </select>
+    <br>
+	<label for="work_type">work_type</label>
+    <select id="work_type" name="work_type">
+      <option value="0">Govt_job</option>
+      <option value="1">Never_worked</option>
+	  <option value="2">Private</option>
+      <option value="3">Self-employed</option>
+	  <option value="4">children</option>
+    </select>
+    <br>
+	<label for="Residence_type">Residence_type</label>
+    <select id="Residence_type" name="Residence_type">
+      <option value="0">Rural</option>
+      <option value="1">Urban</option>
+    </select>
+    <br>
+	<label for="avg_glucose_level">avg_glucose_level</label>
+    <input type="text" id="avg_glucose_level" name="avg_glucose_level" required>
+	<br>
+	<label for="bmi">bmi</label>
+    <input type="text" id="bmi" name="bmi" required>
+	<br>
+	<label for="smoking_status">smoking_status</label>
+    <select id="smoking_status" name="smoking_status">
+      <option value="0">Unknown</option>
+      <option value="1">formerly smoked</option>
+	  <option value="2">never smoked</option>
+      <option value="3">smokes</option>
+    </select>
+    <br>
+    <br>
+    <br>
+	<input type="submit" value="Отправить">
+    <br>
+    <br>
+    <br>
+  </form>
+  <form action="/start">
+    <input type="submit" value="Назад">
+  </form>
+</font>
+</div>
+</body>
+</html>

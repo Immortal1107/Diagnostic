@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ru" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="/static/style.css">
+  </head>
+<body>
+    <h3 align="center"><font size="10" color= "#ff7675">Диагностика диабета</font></h3>
+
+<div align="center">
+<font color= "#ff7675">
+  <form action="/result_diabetes" method="POST">
+    <label for="cholesterol">cholesterol</label>
+    <input type="text" id="cholesterol" name="cholesterol" required>
+    <br>
+    <label for="glucose">glucose</label>
+    <input type="text" id="glucose" name="glucose" required>
+    <br>
+	<label for="hdl_chol">hdl_chol</label>
+    <input type="text" id="hdl_chol" name="hdl_chol" required>
+    <br>
+	<label for="chol_hdl_ratio">chol_hdl_ratio</label>
+    <input type="text" id="chol_hdl_ratio" name="chol_hdl_ratio" required>
+    <br>
+	<label for="age">age</label>
+    <input type="text" id="age" name="age" required>
+    <br>
+	<label for="gender">gender</label>
+    <select id="gender" name="gender">
+      <option value="0">Female</option>
+      <option value="1">Male</option>
+    </select>
+    <br>
+	<label for="height">height</label>
+    <input type="text" id="height" name="height" required>
+    <br>
+	<label for="weight">weight</label>
+    <input type="text" id="weight" name="weight" required>
+    <br>
+	<label for="bmi">bmi</label>
+    <input type="text" id="bmi" name="bmi" required>
+    <br>
+	<label for="systolic_bp">systolic_bp</label>
+    <input type="text" id="systolic_bp" name="systolic_bp" required>
+    <br>
+	<label for="diastolic_bp">diastolic_bp</label>
+    <input type="text" id="diastolic_bp" name="diastolic_bp" required>
+    <br>
+	<label for="waist">waist</label>
+    <input type="text" id="waist" name="waist" required>
+    <br>
+	<label for="hip">hip</label>
+    <input type="text" id="hip" name="hip" required>
+    <br>
+	<label for="waist_hip_ratio">waist_hip_ratio</label>
+    <input type="text" id="waist_hip_ratio" name="waist_hip_ratio" required>
+    <br>
+    <br>
+    <br>
+	<input type="submit" value="Отправить">
+    <br>
+    <br>
+    <br>
+  </form>
+  <form action="/start">
+    <input type="submit" value="Назад">
+  </form>
+</font>
+</div>
+</body>
+</html>
